@@ -18,18 +18,33 @@
           >
           <ul class="nav-list-expand">
             <li class="nav-item">
-              <a href="" class="nav-link">Despre</a>
+              <a href="#about" class="nav-link">Despre</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Servicii</a>
+              <a href="#gallery" class="nav-link">Galerie</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Preturi</a>
+              <a href="#prices" class="nav-link">Tarife</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
+          <ul class="nav-list-small">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Despre</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a href="#prices" class="nav-link">Tarife</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <img src="icons/menu.svg" alt="" class="icon-menu" />
         </nav>
         <div class="row h-100">
           <div
@@ -54,7 +69,7 @@
     <section class="section-short">
       <div class="container">
         <div class="row g-5">
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-flex align-items-center">
             <div class="card-short">
               <img src="icons/pla.svg" alt="" class="short-icon mbot-20" />
               <h3>Filamente PLA</h3>
@@ -69,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-flex justify-content-center">
             <div class="card-short">
               <img
                 src="icons/color-selection.svg"
@@ -86,7 +101,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-flex justify-content-center">
             <div class="card-short">
               <img
                 src="icons/eco-friendly.svg"
@@ -109,12 +124,12 @@
         </div>
       </div>
     </section>
-    <div class="section-divider"></div>
-    <section class="section-about">
+    <div class="section-divider">
+      <img src="icons/logowhite.svg" alt="" class="icon-divider" />
+    </div>
+    <section id="about" class="section-about">
       <div class="container">
-        <h2 class="section-heading text-left mbot-80">
-          <span class="h2-spanbefore">află cine suntem</span>Despre noi
-        </h2>
+        <h2 class="section-heading text-left mbot-80">Despre noi</h2>
         <p class="mbot-30">
           Cu o experiență de 6 ani în domeniul 3d printing, suntem aici să te
           ajutăm să obții modelul tău în realitate. Pentru că ne pasă de mediul
@@ -124,7 +139,9 @@
         <div class="row g-5">
           <div class="col-lg-6 d-flex justify-content-center">
             <div class="card-about">
-              <img src="img/3dprint.jpg" alt="" class="img-fluid" />
+              <div class="card-img">
+                <img src="img/3dprint.jpg" alt="" class="img-fluid" />
+              </div>
               <div class="wrapper">
                 <h3 class="card-heading mbot-20">3D Printing</h3>
                 <p class="mbot-40">
@@ -139,7 +156,9 @@
           </div>
           <div class="col-lg-6 d-flex justify-content-center">
             <div class="card-about">
-              <img src="img/3dmodeling.JPG" alt="" class="img-fluid" />
+              <div class="card-img">
+                <img src="img/3dprint.jpg" alt="" class="img-fluid" />
+              </div>
               <div class="wrapper">
                 <h3 class="card-heading mbot-20">Modelare 3D</h3>
                 <p class="mbot-40">
@@ -154,76 +173,228 @@
         </div>
       </div>
     </section>
-    <div class="section-divider"></div>
-    <section class="section-gallery">
+    <div class="section-divider">
+      <img src="icons/logowhite.svg" alt="" class="icon-divider" />
+    </div>
+    <section id="gallery" class="section-gallery">
       <div class="container">
         <h2 class="section-heading mbot-80">Galerie</h2>
         <p class="mbot-30">
           Aruncă un ochi asupra modelelor pe care le-am modelat și printat in
           trecut.
         </p>
-        <div class="row g-0">
+        <div class="row g-5 g-md-0">
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card-gallery">
               <img
                 src="img/DoNotDisturb.jfif"
                 alt=""
-                class="img-fluid img-rounded img-hover"
+                class="img-fluid img-rounded"
               />
-              <div class="img-details">
-                <h4>Tablou perete</h4>
-                <p class="text-hover">Mărime: 200 x 200(mm)</p>
-                <p class="text-hover">Pret: 150lei</p>
-              </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <img
-              src="img/LinkinPark.jfif"
-              alt=""
-              class="img-fluid img-rounded img-hover"
-            />
+            <div class="card-gallery">
+              <img
+                src="img/LinkinPark.jfif"
+                alt=""
+                class="img-fluid img-rounded"
+              />
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <img
-              src="img/CubaLibre.jfif"
-              alt=""
-              class="img-fluid img-rounded img-hover"
-            />
+            <div class="card-gallery">
+              <img
+                src="img/CubaLibre.jfif"
+                alt=""
+                class="img-fluid img-rounded"
+              />
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <img
-              src="img/DoNotDisturb.jfif"
-              alt=""
-              class="img-fluid img-rounded img-hover"
-            />
+            <div class="card-gallery">
+              <img
+                src="img/DoNotDisturb.jfif"
+                alt=""
+                class="img-fluid img-rounded"
+              />
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <img src="img/Woman.jfif" alt="" class="img-fluid img-rounded" />
+            <div class="card-gallery">
+              <img src="img/Woman.jfif" alt="" class="img-fluid img-rounded" />
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <img
-              src="img/PepsiCola.jfif"
-              alt=""
-              class="img-fluid img-rounded img-hover"
-            />
+            <div class="card-gallery">
+              <img
+                src="img/PepsiCola.jfif"
+                alt=""
+                class="img-fluid img-rounded"
+              />
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <img
-              src="img/DoNotDisturb.jfif"
-              alt=""
-              class="img-fluid img-rounded img-hover"
-            />
+            <div class="card-gallery">
+              <img
+                src="img/DoNotDisturb.jfif"
+                alt=""
+                class="img-fluid img-rounded"
+              />
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <img
-              src="img/LinkinPark.jfif"
-              alt=""
-              class="img-fluid img-rounded"
-            />
+            <div class="card-gallery">
+              <img
+                src="img/LinkinPark.jfif"
+                alt=""
+                class="img-fluid img-rounded"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="section-divider">
+      <img src="icons/logowhite.svg" alt="" class="icon-divider" />
+    </div>
+    <section id="prices" class="section-prices">
+      <div class="container">
+        <h2 class="section-heading mbot-80">Tarife</h2>
+        <p class="mbot-30">
+          Mai jos găsești tarifele aplicate în funcție de serviciile noastre.
+        </p>
+        <div class="row d-flex justify-content-center mbot-70">
+          <div class="col-lg-8 d-flex justify-content-center">
+            <table>
+              <tr class="tr-titles">
+                <th>Serviciu</th>
+                <th>Modelare 3D</th>
+                <th>Printare 3D [oră]</th>
+                <th>Filament [grame]</th>
+              </tr>
+              <tr class="tr-prices">
+                <th>Tarif</th>
+                <td>20 LEI / oră</td>
+                <td>15 LEI / oră</td>
+                <td>1 LEU / gram</td>
+              </tr>
+              <tr class="tr-prices">
+                <th>Observații</th>
+                <td></td>
+                <td>
+                  În cazul în care modelul printat 3D are nevoie de suporți,
+                  dacă clientul dorește înlăturarea acestora, se va aplica o
+                  taxă suplimentară de 100 lei.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h4 class="mbot-10">Modelare 3D</h4>
+        <p class="mbot-30">
+          Dacă ai nevoie de un model 3D, vei plătii timpul necesar realizării
+          modelului respectiv. De exemplu, dacă ai nevoie de un model 3D custom,
+          iar pentru realizarea lui sunt necesare 3 ore, suma pe care trebuie să
+          o platești va fi 20 LEI x 3 ore adică 60 LEI.
+        </p>
+        <h4 class="mbot-10">Printare 3D</h4>
+        <p>
+          În cazul în care dorești să printezi 3D un model, prețul total este
+          reprezentat de timpul necesar printării 3D la care se adaugă prețul
+          per gramaj X greutatea modelului (grame). De exemplu dacă dorești să
+          printezi 3D o vază pentru care este necesară utilizarea a 20 de grame
+          de filament și pentru care este nevoie de 2 ore pentru a fi realizată,
+          suma total va fi compusă din 15 LEI x 2 ore + 1 LEU x 20 grame adică
+          50 LEI.
+        </p>
+      </div>
+    </section>
+    <div class="section-divider">
+      <img src="icons/logowhite.svg" alt="" class="icon-divider" />
+    </div>
+    <section id="contact" class="section-contact">
+      <div class="container">
+        <h2 class="section-heading mbot-80">Contact</h2>
+        <p class="mbot-30">
+          Dacă dorești să intrii în contact cu noi, ne poți lăsa un mesaj prin
+          intermediul formularului de contact, sau ne poți contacta prin e-mail
+          sau telefon.
+        </p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-12">
+            <div class="contact-container">
+              <div class="row g-5">
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <form action="">
+                    <h3 class="mbot-30">Formular de contact</h3>
+
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Introdu numele tău..."
+                    />
+
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Introdu adresa ta de e-mail"
+                    />
+
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Introdu numărul tău de telefon..."
+                    />
+
+                    <textarea
+                      placeholder="Introdu mesajul tău..."
+                      class="form-textarea mbot-30"
+                    ></textarea>
+                    <button class="btn-hero" style="width: fit-content">
+                      Trimite
+                    </button>
+                  </form>
+                </div>
+                <div class="toggle-divider"></div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <div class="card-contact d-flex align-items-center">
+                    <h3>Contact rapid</h3>
+                    <div class="features-box">
+                      <div class="card-contact-feature mbot-40">
+                        <img
+                          class="icon-contact"
+                          src="icons/messaage.svg"
+                          alt=""
+                        />
+                        <p class="text-contact">+40 749 406 638</p>
+                      </div>
+                      <div class="card-contact-feature">
+                        <img
+                          class="icon-contact"
+                          src="icons/phone.svg"
+                          alt=""
+                        />
+                        <p class="text-contact">3dprintingfactory@mail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="card-shape">
+                      <div class="logo-box">
+                        <a href="" class="icon-logo"
+                          ><img src="icons/logowhite.svg" alt="" />Printing
+                          Factory</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
   </body>
 </html>
